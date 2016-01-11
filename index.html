@@ -200,6 +200,29 @@
 						</div>
 				
 					</section>
+
+					<section>
+					<h3>From diffusion to tracks</h3>
+					<div style="position: absolute;">
+					<img src="images/d2t-bkgrnd.png" style="background:none; border:none; box-shadow:none;" height="505", width="766">
+					</div>
+					<div class="fragment" style="position: absolute; left: 91px; top:58px;"><img src="images/tensor_ellipsoids.png" style="background:none; border:none; box-shadow:none; opacity:0.4; filter:alpha(opacity=40);">
+					</div>
+					<div class = "fragment fade-in" style="position: absolute;">
+					<canvas id="fiber" width="1000" height="1000"></canvas>
+					    <script>
+					      var canvas = document.getElementById('fiber');
+					      var context = canvas.getContext('2d');
+					      context.beginPath();
+					      context.moveTo(590, 170);
+					      context.bezierCurveTo(400, 300, 365, 80, 378, 65);
+					      context.lineWidth = 10;
+					      // line color
+					      context.strokeStyle = 'yellow';
+					      context.stroke();
+					    </script>
+					  </div>
+					</section>
 					
 
 				</section>
@@ -250,14 +273,15 @@
 					<section>
 						
 						<h2><a href="http://dipy.org">DIPY</a>: Diffusion MRI in Python</h2>
-						<div class="fragment">
+						<div>
 							Part of the <a href="http://nipy.org">NIPY</a> community
 							<div style="position: absolute; left: 720px; top:100px;">
 								<a href="http://nipy.org">
 									<img src="images/nipy.svg" style="background:none; border:none; box-shadow:none;" width="80"></a>
 							</div>
 						</div>
-						<p class="fragment"> Started in 2009 by <a href="http://eleftherios.net">Eleftherios Garyfallidis</a></p>
+						<p> Started in 2009 by <a href="http://eleftherios.net">Eleftherios Garyfallidis</a></p>
+						<p><img src="images/dipy-logo.png"></p>
 				
 					</section>
 					<section>
